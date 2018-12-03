@@ -1,0 +1,10 @@
+.vscode/launch.json
+.vscode/settings.json
+bin/d1p1.exe
+bin/d1p2_bst.exe
+bin/d1p2_memoized.exe
+bin/d1p2_vector.exe
+bin/d2p1.exe
+bin/d2p2.exe
+bin/d3p1.exe
+bin/d3p2.exe

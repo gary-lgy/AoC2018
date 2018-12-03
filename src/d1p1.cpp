@@ -10,7 +10,7 @@ int main() {
     }
     long long result = 0;
     std::string curr_num;
-    while (std::getline(ifs, curr_num)){
+    while (std::getline(ifs, curr_num)) {
         result += std::stoll(curr_num);
     }
     std::cout << result << std::endl;

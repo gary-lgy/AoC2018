@@ -1,4 +1,3 @@
-/*************** either the problem or the solution is bugged *******************/
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -65,28 +64,14 @@ int main() {
             if (closest_origin != -1) {
                 if (x == x_min || x == x_max || y == y_min || y == y_max) {
                     area[closest_origin] = -1;
-                } else {
+                } else if (area[closest_origin] != -1) {
                     ++area[closest_origin];
                 }
             }
         }
     }
 
-    // original answer output
-    // int largest_area = *std::max_element(area.begin(), area.end());
-    // std::cout << largest_area << std::endl;
-
-    // debug
-    std::vector<std::pair<int, int>> ans;
-    for (int i = 0; i < area.size(); ++i) {
-        ans.push_back({area[i], i});
-    }
-    std::sort(ans.begin(), ans.end());
-    for (auto cur : ans) {
-        std::cout << cur.first << " " << cur.second << std::endl;
-    }
-    
-    // this solution gives the correct area map for the sample input, but does not work for the actual input
-    // the correct answer is the SECOND largest area given by this solution. Why?
+    int largest_area = *std::max_element(area.begin(), area.end());
+    std::cout << largest_area << std::endl;
     return 0;
 }

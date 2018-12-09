@@ -1,5 +1,6 @@
 .vscode/launch.json
 .vscode/settings.json
+data/temp
 bin/d1p1.exe
 bin/d1p2_bst.exe
 bin/d1p2_memoized.exe

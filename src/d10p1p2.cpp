@@ -59,8 +59,8 @@ int main() {
     }
 
     std::map<std::pair<long long, long long>, char> message;
-    for (long y = min_area_y_start; y <= min_area_y_end; ++y) {
-        for (long x = min_area_x_start; x <= min_area_x_end; ++x) {
+    for (long long y = min_area_y_start; y <= min_area_y_end; ++y) {
+        for (long long x = min_area_x_start; x <= min_area_x_end; ++x) {
             message[{x, y}] = ' ';
         }
     }
@@ -70,8 +70,8 @@ int main() {
     }
 
     // part 1
-    for (long y = min_area_y_start; y <= min_area_y_end; ++y) {
-        for (long x = min_area_x_start; x <= min_area_x_end; ++x) {
+    for (long long y = min_area_y_start; y <= min_area_y_end; ++y) {
+        for (long long x = min_area_x_start; x <= min_area_x_end; ++x) {
             std::cout << message[{x, y}];
         }
         std::cout << std::endl;
